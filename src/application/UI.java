@@ -1,6 +1,7 @@
 package application;
 
 import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 import chess.ChessPiece;
@@ -29,8 +30,8 @@ public class UI {
 	public  static  final  String  ANSI_WHITE_BACKGROUND  ="\u001B[47m";
 	
 	public static void clearScreen() {
-		System.out.println("\033[H\023[2j");
-		System.out.println();
+		System.out.print("\033[H\023[2j");
+		System.out.flush();
 	}
 	
 	public static ChessPosition readChessPosition(Scanner sc ) {
